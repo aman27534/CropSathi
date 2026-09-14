@@ -1,0 +1,1 @@
+sed -i 's/Box(modifier = Modifier.fillMaxSize()) {/val isRefreshing by viewModel.isRefreshing.collectAsState()\n\n    PullToRefreshBox(\n        isRefreshing = isRefreshing,\n        onRefresh = { viewModel.refreshMapData() },\n        modifier = Modifier.fillMaxSize()\n    ) {/g' app/src/main/java/com/example/MainActivity.kt

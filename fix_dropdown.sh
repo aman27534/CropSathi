@@ -1,0 +1,1 @@
+sed -i '/import androidx.compose.material3.Text/a import androidx.compose.material3.ExposedDropdownMenu\nimport androidx.compose.material3.DropdownMenuItem\nimport androidx.compose.material3.Button\nimport androidx.compose.material3.RadioButton\nimport androidx.compose.material3.IconButton\nimport androidx.compose.material3.Icon' app/src/main/java/com/example/MainActivity.kt

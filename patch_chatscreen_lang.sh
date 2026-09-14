@@ -1,0 +1,2 @@
+sed -i 's/val context = LocalContext.current/val context = LocalContext.current\n    val prefLanguage = LanguageManager.getLanguage(context)/g' app/src/main/java/com/example/ChatScreen.kt
+sed -i 's/viewModel.sendMessage(inputText, selectedModel, BuildConfig.GEMINI_API_KEY, useMaps)/viewModel.sendMessage(inputText, selectedModel, BuildConfig.GEMINI_API_KEY, useMaps, prefLanguage)/g' app/src/main/java/com/example/ChatScreen.kt

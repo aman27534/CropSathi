@@ -1,0 +1,2 @@
+sed -i '/<uses-permission android:name="android.permission.CAMERA" \/>/a \    <uses-feature android:name="android.hardware.camera" android:required="false" \/>\n    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" \/>' app/src/main/AndroidManifest.xml
+sed -i '/<uses-permission android:name="android.permission.RECORD_AUDIO" \/>/a \    <uses-feature android:name="android.hardware.microphone" android:required="false" \/>' app/src/main/AndroidManifest.xml

@@ -1,0 +1,1 @@
+sed -i '/\/\/ History Section/i \        // Crop Growth Trend Chart\n        if (historyItems.isNotEmpty()) {\n            CropGrowthChart(historyItems)\n        }\n' app/src/main/java/com/example/MainActivity.kt

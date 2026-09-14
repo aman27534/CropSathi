@@ -1,0 +1,1 @@
+sed -i 's/composable(Screen.Irrigate.route) { IrrigateScreen() }/composable(Screen.Irrigate.route) { val vm: IrrigationViewModel = androidx.lifecycle.viewmodel.compose.viewModel(); IrrigateScreen(viewModel = vm) }/g' app/src/main/java/com/example/MainActivity.kt

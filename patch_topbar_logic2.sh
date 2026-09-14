@@ -1,0 +1,1 @@
+sed -i 's/actions = {/navigationIcon = { if (isProfile) { androidx.compose.material3.IconButton(onClick = { navController.popBackStack() }) { Icon(Icons.Filled.ArrowBack, contentDescription = "Back") } } },\n                actions = {/g' app/src/main/java/com/example/MainActivity.kt

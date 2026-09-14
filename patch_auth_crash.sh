@@ -1,0 +1,1 @@
+sed -i 's/var user by remember { mutableStateOf(FirebaseAuth.getInstance().currentUser) }/var user by remember { mutableStateOf(try { FirebaseAuth.getInstance().currentUser } catch (e: Exception) { null }) }/g' app/src/main/java/com/example/ProfileScreen.kt

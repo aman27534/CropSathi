@@ -1,0 +1,2 @@
+sed -i 's/androidx.compose.material3.IconButton(onClick = { navController.navigate("profile") }) {/if (!isProfile) { androidx.compose.material3.IconButton(onClick = { navController.navigate("profile") }) {/g' app/src/main/java/com/example/MainActivity.kt
+sed -i 's/Icon(Icons.Filled.Person, contentDescription = "Profile")\n                    }/Icon(Icons.Filled.Person, contentDescription = "Profile")\n                    } }/g' app/src/main/java/com/example/MainActivity.kt

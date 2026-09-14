@@ -1,0 +1,1 @@
+sed -i '/import androidx.compose.material3.Text/a import androidx.compose.material3.DropdownMenu\nimport androidx.compose.material3.DropdownMenuItem\nimport androidx.compose.material3.ExposedDropdownMenuBox\nimport androidx.compose.material3.ExposedDropdownMenuDefaults' app/src/main/java/com/example/MainActivity.kt

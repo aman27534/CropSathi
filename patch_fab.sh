@@ -1,0 +1,4 @@
+sed -i 's/enabled = inputText.isNotBlank() && !isLoading && !transcribing//g' app/src/main/java/com/example/ChatScreen.kt
+sed -i 's/viewModel.sendMessage(inputText, selectedModel, BuildConfig.GEMINI_API_KEY, useMaps)/if (inputText.isNotBlank() \&\& !isLoading \&\& !transcribing) {\n                        viewModel.sendMessage(inputText, selectedModel, BuildConfig.GEMINI_API_KEY, useMaps)\n                        inputText = ""\n                    }/g' app/src/main/java/com/example/ChatScreen.kt
+sed -i 's/inputText = ""//g' app/src/main/java/com/example/ChatScreen.kt
+sed -i 's/containerColor = MaterialTheme.colorScheme.primary,/containerColor = if (inputText.isNotBlank() \&\& !isLoading \&\& !transcribing) MaterialTheme.colorScheme.primary else Color.Gray,/g' app/src/main/java/com/example/ChatScreen.kt

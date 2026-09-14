@@ -1,0 +1,1 @@
+sed -i 's/modifier = Modifier.fillMaxWidth()/modifier = Modifier.fillMaxWidth()\n                )\n            }\n            Spacer(modifier = Modifier.height(32.dp))\n            LanguageSettingsCard(context)/' app/src/main/java/com/example/ProfileScreen.kt

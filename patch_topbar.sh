@@ -1,0 +1,1 @@
+sed -i 's/val currentDestination = navBackStackEntry?.destination/val currentDestination = navBackStackEntry?.destination\n                val isProfile = currentDestination?.route == "profile"/g' app/src/main/java/com/example/MainActivity.kt

@@ -1,0 +1,1 @@
+sed -i 's/fun MapScreen(viewModel: DashboardViewModel = viewModel()) {/@OptIn(ExperimentalMaterial3Api::class)\nfun MapScreen(viewModel: DashboardViewModel = viewModel()) {/g' app/src/main/java/com/example/MainActivity.kt
