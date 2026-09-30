@@ -1,0 +1,10 @@
+Corn_Common_Rust
+Corn_Northern_Leaf_Blight
+Corn_Healthy
+Potato_Early_Blight
+Potato_Late_Blight
+Potato_Healthy
+Tomato_Early_Blight
+Tomato_Late_Blight
+Tomato_Leaf_Mold
+Tomato_Healthy

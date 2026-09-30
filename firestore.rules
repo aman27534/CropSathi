@@ -1,0 +1,30 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Farmer Listings Collection ───────────────────────────────────────────
+    match /farmer_listings/{listingId} {
+      // Anyone can read active listings to browse the marketplace
+      allow read: if true;
+
+      // Allow creating a listing if required fields are provided
+      allow create: if request.resource.data.crop is string
+                    && request.resource.data.quantityKg is number
+                    && request.resource.data.pricePerKg is number
+                    && request.resource.data.farmerName is string
+                    && request.resource.data.farmerPhone is string
+                    && request.resource.data.status in ['active', 'sold'];
+
+      // Allow updating status or details
+      allow update: if request.resource.data.status in ['active', 'sold'];
+
+      // Deletion allowed only if authorized
+      allow delete: if request.auth != null;
+    }
+
+    // ── Default rule for other collections ──────────────────────────────────
+    match /{document=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
