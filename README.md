@@ -114,7 +114,7 @@ The disease diagnosis model is trained using a specialized two-phase transfer le
 
 ### Prerequisites
 - **Android Studio** (Ladybug / Koala or newer)
-- **JDK 17** (configured as Gradle JDK)
+- **JDK 21** (configured as Gradle JDK)
 - **Android Device or Emulator** running API 26+ (Android 8.0+)
 
 ### Step-by-Step Instructions
